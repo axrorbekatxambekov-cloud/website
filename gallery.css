@@ -63,11 +63,12 @@ nav a:hover {
   padding: 60px 80px;
 }
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
   gap: 25px;
+  flex-wrap: wrap;
 }
 .img-box {
+  width: 30%;
   height: 200px;
   background: #222;
   border-radius: 12px;
@@ -76,6 +77,10 @@ nav a:hover {
   justify-content: center;
   color: #555;
   font-size: 18px;
+}
+
+.img-box img{
+  width: 100%;
 }
 footer {
   text-align: center;
@@ -88,15 +93,8 @@ footer {
   font-size: 14px;
 }
 
-.gallery-grid{
-  display: flex;
-  width: 33%;
-
-}
-
 .img-fluid{
   width: 33%;
-  height: auto;
-  border-radius: 12px;
-  
+  height: 100%;
+  object-fit: cover;  
 }

@@ -3,3 +3,26 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill:hover {
+    background-color: rgb(82, 213, 16);
+    transition: all 2s;
+    border: solid white 2px;
+}
+
+.skill {
+    width: 33%;
+    margin-top: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 100px ;
+    background-color: rgba(197, 130, 14, 0.19);
+    padding: 30px;
+    color: white;
+}
+
